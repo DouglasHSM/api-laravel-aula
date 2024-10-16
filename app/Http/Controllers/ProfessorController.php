@@ -30,9 +30,7 @@ class ProfessorController extends Controller
     public function store(StoreProfessorRequest $request)
     {
         // dd($request-all());
-        // Professor::create($request->all());
-        return $resquest->file('foto')->store('local');
-
+        Professor::create($request->all());
     }
 
     /**
